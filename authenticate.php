@@ -44,11 +44,11 @@ if ($stmt->num_rows > 0) {
         header('Location: home.php');
 	} else {
 		// Incorrect password
-		echo 'Incorrect username and/or password!';
+		echo '<script>alert("Incorrect Password")</script>'; 
 	}
 } else {
 	// Incorrect username
-	echo 'Incorrect username and/or password!';
+	echo '<script>alert("Incorrect Username")</script>'; 
 }
 
 // $stmt->store_result();
